@@ -10,25 +10,35 @@ import SingleProduct from './SingleProduct';
 import Error from './pages/Error';
 import Footer from './components/Footer';
 import { GlobalStyle } from './GlobalStyle';
+import { ThemeProvider } from 'styled-components';
 
 function App() {
+
+  const theme = {
+    colors: {
+      bg:"#000",
+    }, 
+  };
+
   return (
     <>
-      <Router>
-        <Header/>
-        <GlobalStyle/>
-        <Routes>
-          <Route path="/" element={<Home/>} />
-          <Route path="/about" element={<About/>} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path='/Singleproduct/:id' element={<SingleProduct />} />
-          {/* id is here for the product */}
-          <Route path="*" element={<Error/>} />
-        </Routes>
+      <ThemeProvider theme={theme}>
+        <Router>
+          <Header/>
+          <GlobalStyle/>
+            <Routes>
+                <Route path="/" element={<Home/>} />
+                <Route path="/about" element={<About/>} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path='/Singleproduct/:id' element={<SingleProduct />} />
+                {/* id is here for the product */}
+                <Route path="*" element={<Error/>} />
+            </Routes>
 
-        <Footer/>
+          <Footer/>
 
-     </Router>
+          </Router>
+        </ThemeProvider>
     </>
   );
 }
