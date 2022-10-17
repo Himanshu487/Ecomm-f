@@ -13,3 +13,43 @@
 .d-flex.alig-f-start{
     padding:13px 0;
 }
+
+.nav-bar-b{
+display: flex;
+justify-content: space-between;
+}
+
+@media (max-width:640px) {
+    /* .d-flex.alig-f-start{
+       display: none;
+    } */
+    .alig-navb{
+      display: none;
+    }
+    .alig-navb.active{
+        display:block;
+    }
+    .alig-navb.li-hambur{
+        display: block;
+    }
+    .hambur .li-hambur{
+        display:block;
+    }
+    .hambur{
+        display: block !important;
+    }
+}
+
+.alig-navb.active{
+display:none;
+}
+/* 
+.hambur .li-hambur{
+    display: none;
+} */
+.hambur{
+    display: none;
+}
+.li-hambur{
+    display: none;
+}
