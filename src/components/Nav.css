@@ -1,0 +1,15 @@
+.alig-navb{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100%;
+    padding: 50 0px 50 0px;
+}
+
+.alig-navb li .nav-link{
+    padding-left: 10px;
+}
+
+.d-flex.alig-f-start{
+    padding:13px 0;
+}

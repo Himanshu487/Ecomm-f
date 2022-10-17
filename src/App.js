@@ -11,12 +11,13 @@ import Error from './pages/Error';
 import Footer from './components/Footer';
 import { GlobalStyle } from './GlobalStyle';
 import { ThemeProvider } from 'styled-components';
+import Products from './Products';
 
 function App() {
 
   const theme = {
     colors: {
-      bg:"#000",
+      bg:"red",
     }, 
   };
 
@@ -29,7 +30,8 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home/>} />
                 <Route path="/about" element={<About/>} />
-                <Route path="/contact" element={<Contact />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/Prodcuts" element={<Products />} />
                 <Route path='/Singleproduct/:id' element={<SingleProduct />} />
                 {/* id is here for the product */}
                 <Route path="*" element={<Error/>} />
