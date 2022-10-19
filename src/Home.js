@@ -3,14 +3,14 @@ import React from 'react'
 import HeroSection from './components/HeroSection';
 
 const Home = () => {
-  // const data = {
-  //   name: "charlie store",
-  // };
+  const data = {
+    name: "charlie Ecommerce",
+  };
   // we have to get this data there in the herosection
   return (
     <>
-      {/* myData={data} */}
-      <HeroSection  />
+     
+      <HeroSection  myData={data}  />
       </>
   ) 
 }

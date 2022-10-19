@@ -2,14 +2,13 @@ import React from 'react'
 import HeroSection from '../components/HeroSection'
 const About = () => {
   
-  // const data = {
-  //   name: "thapa store",
-  // };
+  const data = {
+    name: "thapa store",
+  };
 
   return (
     <div>
-       {/* myData={data} */}
-    <HeroSection/>
+    <HeroSection myData={data} />
     </div>
   )
 }

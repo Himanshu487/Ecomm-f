@@ -1,10 +1,8 @@
 import React from 'react'
 import styled from 'styled-components';
 
-const HeroSection = () => {
-    // {myData}
-
-    // const name={myData}
+const HeroSection = ({ myData }) => {
+    const {name} = myData;
 
   return (
       <>
@@ -13,9 +11,7 @@ const HeroSection = () => {
               <div className='box'>
                   <div className='alig-box'>
                       <p>Welcome to</p>
-                      <h1>Charlie's 
-                      {/* {name} */}
-                      </h1>
+                      <h1>charlie {name} </h1>
                       <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available</p>
                   </div>
               </div>

@@ -31,7 +31,10 @@ const Nav = () => {
               </li>
               <li>
               <NavLink to="/contact" className="nav-link"><IoMdContact/>Contact</NavLink>
-              </li>         
+            </li>
+            <li>
+              <NavLink to="/About" className="nav-link"><IoMdContact/>About</NavLink>
+              </li>        
               <li>
               <NavLink to="/Home" className="nav-link">Home</NavLink>    
               </li>
