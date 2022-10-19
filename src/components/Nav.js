@@ -33,7 +33,7 @@ const Nav = () => {
               <NavLink to="/contact" className="nav-link"><IoMdContact/>Contact</NavLink>
               </li>         
               <li>
-              <NavLink to="/cart" className="nav-link">Products</NavLink>    
+              <NavLink to="/Home" className="nav-link">Home</NavLink>    
               </li>
               <li>
               <NavLink to="/cart" className="nav-link"><FiShoppingCart/></NavLink>  

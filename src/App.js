@@ -2,7 +2,7 @@
 import './App.css';
 // import { Router, Routes, Route } from "react-router-dom";
 import { BrowserRouter as Router,Route,Routes } from 'react-router-dom';
-import Home from './pages/Home';
+import Home from './Home';
 import Contact from './pages/Contact';
 import About from './pages/About';
 import Header from './components/Header';
