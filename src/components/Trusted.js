@@ -61,4 +61,4 @@ justify-content:center;
 }
 `;
 
-export default Trusted
+export default Trusted;
